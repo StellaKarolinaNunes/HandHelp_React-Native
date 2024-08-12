@@ -15,6 +15,7 @@ import Diabete from './src/components/Diabete';
 import Fumante from './src/components/Fumante';
 import NotaMedica from './src/components/NotaMedica';
 import Pressao from './src/components/Pressao';
+import Triagem_escolha from './src/components/Triagem_escolha';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -22,6 +23,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import LoginScreen from './src/screens/LoginScreen';
 import RegisterScreen from './src/screens/RegisterScreen'
 import PainelScreen from './src/screens/PainelScreen';
+import Triagem_sintomas from './src/components/Triagem_sintomas/Triagem_sintomas';
 
 const Stack = createNativeStackNavigator();
 
@@ -48,6 +50,8 @@ const App = () => {
           <Stack.Screen name="Fumante" component={Fumante} />
           <Stack.Screen name="NotaMedica" component={NotaMedica} />
           <Stack.Screen name="Pressao" component={Pressao} />
+          <Stack.Screen name= "Triagem_escolha" component={Triagem_escolha}/>
+          <Stack.Screen name= "Triagem_sintomas" component={Triagem_sintomas}/>
         </Stack.Navigator>
       </NavigationContainer>
   );

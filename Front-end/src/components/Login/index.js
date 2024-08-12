@@ -28,7 +28,7 @@ const Login = ({navigation}) => {
                 //     'message': response.data.message,
                 //     'status': response.status
                 // });
-                navigation.navigate('Painel');
+                navigation.navigate('Triagem_sintomas');
             }
         } catch (err) {
             Alert.alert('Falha no login: \n'+ err.response.data.message);
